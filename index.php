@@ -105,6 +105,30 @@
 
 	}
 	echo "<pre>". print_r($goods, 1)."</pre>";
+
+
+	function get_count($arr) {
+		$count = 0;
+		foreach($arr as $item) {
+			$count++;
+		}
+		return $count;
+	}
+	$a = [1,2,3,4,5,2535325,352,23,5,235,23,52,35];
+	echo get_count($a);
+	echo "\n<p></p>\n";
+
+	function multiplication($arg1, $arg2) {
+		function for_arg($arg) {
+			for($j = 1; $j <= 10; $j++) {
+				echo $arg, "*", $j, "=", $arg * $j, "</br>\n";
+				}
+		}
+		for_arg($arg1);
+		echo "<p></p>\n";
+		for_arg($arg2);
+	}
+	multiplication(25,30);
 ?>
 </body>
 </html>
