@@ -7,6 +7,7 @@
 </head>
 <body>
 <?php
+	// Hello, this is my projects, when i was learning PHP!
 	$minute = 60;
 	$hour = $minute * 60;
 	$day = $hour * 24;
