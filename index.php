@@ -24,6 +24,27 @@
 
 	$x = 60;
 	echo "В минуте: ", $x * 60, " секунд, а воот в часу: ", $x * 60 * 60, ", кстати, в дне: ", $x * 60 * 60 * 24, ", или же, например в неделе: ", $x * 60 * 60 * 24 * 7, " секунд.";
+		echo "\n<select>\n";
+	$year = 1900;
+	while ($year <= 2021) {
+		echo "<option>{$year}</option>\n";
+		$year++;
+	}
+	echo "</select>\n";
+	echo "<p></p>\n";
+	$i = 1;
+	$number = 1;
+	while($i <= 10) {
+		if ($number >= 10) {
+			$number = 1;
+			echo "</br>\n";
+		}
+		while($number <= 10) {
+			echo $i * $number, " \n";
+			$number++;
+		}
+		$i++;
+	}
 ?>
 </body>
 </html>
