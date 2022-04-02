@@ -45,6 +45,66 @@
 		}
 		$i++;
 	}
+	$nums = [1,2,3,4,5,6,7,8,9,10];
+	for ($i = 0; $i <= count($nums) - 1; $i++) {
+		if ($nums[$i] % 2 == 0) {
+			echo $nums[$i], "</br>";
+		}
+	}
+	echo "<p></p>";
+	foreach($nums as $item) {
+		if ($item % 2 == 0) {
+			echo $item, "</br>";
+		}
+	}
+	echo "<p></p>";
+	$goods = [
+    	[
+    	    'title' => 'Nokia',
+    	    'price' => '100',
+    	    'qty' => '10',
+    	],
+    	[
+    	    'title' => 'Sony',
+    	    'price' => '120',
+    	    'qty' => '7',
+    	],
+    	[
+    	    'title' => 'LG',
+    	    'price' => '105',
+    	    'qty' => '15',
+    	],
+	];
+
+	for ($i = 0; $i <= count($goods) - 1;$i++) {
+		if ($goods[$i]['price'] < 120) {
+			$goods[$i]['price'] += 15;
+		}
+	}
+	echo "<pre>". print_r($goods, 1)."</pre>";
+	echo "<p></p>";
+	$goods = [
+    	[
+    	    'title' => 'Nokia',
+    	    'price' => '100',
+    	    'qty' => '10',
+    	],
+    	[
+    	    'title' => 'Sony',
+    	    'price' => '120',
+    	    'qty' => '7',
+    	],
+    	[
+    	    'title' => 'LG',
+    	    'price' => '105',
+    	    'qty' => '15',
+    	],
+	];
+	foreach($goods as $item) {
+		echo $item['price'];
+
+	}
+	echo "<pre>". print_r($goods, 1)."</pre>";
 ?>
 </body>
 </html>
